@@ -22,8 +22,10 @@ antwort = requests.post(
         ],
     },
 )
-
-# Antwort-Body von JSON in ein Python-dict parsen
-daten = antwort.json()
-# choices[0] = erste (und einzige) Antwortoption, message.content = der Text darin
-print(daten["choices"][0]["message"]["content"])
+if antwort.status_code != 200:
+    print("fehler")
+else:
+    # Antwort-Body von JSON in ein Python-dict parsen
+    daten = antwort.json()
+    # choices[0] = erste (und einzige) Antwortoption, message.content = der Text darin
+    print(daten["choices"][0]["message"]["content"])
