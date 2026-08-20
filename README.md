@@ -10,7 +10,7 @@ Enthält außerdem einfache Fehlerbehandlung: Antwortet die API mit einem Fehler
 
 ## Provider-Wahl
 
-Aktuell wird [Groq](https://groq.com) (Modell `openai/gpt-oss-20b`) über eine OpenAI-kompatible Chat-Completions-API angesprochen — kostenlos nutzbar, für diese Größenordnung an Aufgabe (Frage anhand kurzem Text beantworten) ausreichend. Der Provider ist bewusst nicht festgelegt: Requests-Aufbau, Header und Antwortstruktur sind bei den meisten LLM-Anbietern (u. a. Anthropic Claude) nahezu identisch, ein Wechsel würde im Kern nur URL, Modellname und API-Key betreffen.
+Aktuell wird [Groq](https://groq.com) (Modell `openai/gpt-oss-120b`) über eine OpenAI-kompatible Chat-Completions-API angesprochen — kostenlos nutzbar, für diese Größenordnung an Aufgabe (Frage anhand kurzem Text beantworten) ausreichend. Der Provider ist bewusst nicht festgelegt: Requests-Aufbau, Header und Antwortstruktur sind bei den meisten LLM-Anbietern (u. a. Anthropic Claude) nahezu identisch, ein Wechsel würde im Kern nur URL, Modellname und API-Key betreffen.
 
 ## Voraussetzungen
 
